@@ -49,16 +49,10 @@ Telemetry uses distance (not time) on the x-axis, so different laps line up poin
 
 ## Getting started
 
-### 1. Clone and set up the environment
+### 1. Set up the environment
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
-
-python -m venv venv
-source venv/bin/activate      # Windows: venv\Scripts\activate
-
-pip install fastapi uvicorn fastf1 pandas
+pip install -r requirements.txt
 ```
 
 ### 2. Create the cache folder
