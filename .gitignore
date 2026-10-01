@@ -1,0 +1,20 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# FastF1 cache (poate ajunge la sute de MB)
+fastf1_cache/
+.fastf1-cache/
+
+# Variabile de mediu
+.env
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store

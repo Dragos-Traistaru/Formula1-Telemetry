@@ -1,0 +1,74 @@
+body {
+  background: #0b0d10;
+  color: #e8eaed;
+  font-family: system-ui, sans-serif;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+#query-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+#query-form input {
+  background: #14171b;
+  border: 1px solid #23272d;
+  color: #e8eaed;
+  border-radius: 4px;
+  padding: 6px 8px;
+  width: 100px;
+}
+
+#query-form button {
+  background: #d1352b;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+#status {
+  color: #8b929c;
+  font-size: 14px;
+}
+
+#metrics {
+  display: flex;
+  gap: 12px;
+  margin: 1rem 0;
+}
+
+.metric-card {
+  background: #14171b;
+  border: 1px solid #23272d;
+  border-radius: 6px;
+  padding: 10px 14px;
+  flex: 1;
+}
+
+.metric-card .label {
+  font-size: 12px;
+  color: #8b929c;
+  margin: 0 0 4px;
+}
+
+.panel-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #8b929c;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 1.5rem 0 8px;
+}
+
+canvas {
+  margin-bottom: 1rem;
+}

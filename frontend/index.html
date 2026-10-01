@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>F1 telemetry dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <h1>F1 telemetry dashboard</h1>
+
+  <form id="query-form">
+    <input id="year" placeholder="Year" value="2024" />
+    <input id="track" placeholder="Track" value="Silverstone" />
+    <input id="driver" placeholder="Driver code" value="VER" />
+    <input id="sessionType" placeholder="Session (R/Q/FP1)" value="R" />
+    <input id="lapNumber" placeholder="Lap #" value="20" />
+    <button type="submit">Load session</button>
+  </form>
+
+  <p id="status"></p>
+
+  <div id="metrics"></div>
+
+  <canvas id="lap-chart"></canvas>
+
+  <div class="panel-title">Tyre degradation by stint</div>
+  <canvas id="degradation-chart"></canvas>
+
+  <div class="panel-title">Telemetry — lap <span id="telemetry-lap-label"></span></div>
+  <canvas id="speed-chart"></canvas>
+  <canvas id="throttle-brake-chart"></canvas>
+  <canvas id="gear-chart"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
